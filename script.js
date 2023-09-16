@@ -10,7 +10,7 @@ const data = [
 // 1. Print Developers
 function printDeveloper() {
   const Dev = data.filter((obj) => obj.profession === "developer");
-  console.log(Dev);
+  console.log("Developers: ", Dev);
 }
 
 // 2. Add Data
@@ -20,14 +20,14 @@ function addData() {
   const profession = prompt('Enter profession: ');
   const newdata = {name , age, profession};
   data.push(newdata);
-  console.log(data);
+  console.log("Data Added: ", data);
 }
 
 // 3. Remove Admins
 function removeAdmin() {
   const remove = data.filter((obj) => obj.profession !== 'admin');
 
-  console.log(remove);
+  console.log("Admins removed", remove);
 }
 
 // 4. Concatenate Array
@@ -82,7 +82,7 @@ function uniqueProfessions() {
 function sortByAge() {
   data.sort((a, b) => a.age - b.age);
 
-  console.log(data);
+  console.log("Sorted: ", data);
 }
 
 // 9. Update Profession
